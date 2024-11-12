@@ -1,0 +1,35 @@
+footer{
+    background-color: $light-color
+    p{
+        color:$title-color;
+    }
+    .footer-legal{
+        p{
+            text-align: right;
+        }
+    }
+}
+@media screen and (min-width:1200px){
+    footer{
+        border-top:3px $title-color solid;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:60px;
+        img{
+            height:75px;
+        }
+    } 
+}
+@media screen and (max-width:1199px){
+    footer{
+        border-top:2px $title-color solid;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding:30px;
+        img{
+            height:25px;
+        }
+    }
+}
